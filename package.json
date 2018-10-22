@@ -1,0 +1,14 @@
+{
+  "name": "node-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "mysql2": "^1.6.1"
+  }
+}
