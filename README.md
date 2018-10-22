@@ -3,7 +3,7 @@
 Simple but functional skeleton of Node-Express project
 
 What included?
-* Database (MySQL) connection. You can easily switch it to another database by changing the required db package in [db.js line 6](https://github.com/Doc999tor/Node-Starter/blob/e17cef9dacc3f864af20c70d1d59eb784b2e5788/db.js#6) and DB.getConnection method implementation in [db.js line 24](https://github.com/Doc999tor/Node-Starter/blob/e17cef9dacc3f864af20c70d1d59eb784b2e5788/db.js#24)
+* Database (MySQL) connection. You can easily switch it to another database by changing the required db package in [db.js line 6](https://github.com/Doc999tor/Node-Starter/blob/20df3d5f9fa7c79c4b58642538191f67c0216db5/lib/db.js#L6) and DB.getConnection method implementation in [db.js line 24](https://github.com/Doc999tor/Node-Starter/blob/20df3d5f9fa7c79c4b58642538191f67c0216db5/lib/db.js#L24)
 
 ---
 How to start:
