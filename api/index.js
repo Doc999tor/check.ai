@@ -16,8 +16,10 @@ app.use(logger);
 // db connection
 const connection = require('./lib/db.js');
 
+app.use(require('cors')());
+
 const vastsRouter = require('./lib/routes/vastsRoutes.js');
-app.get('/', (req, res) => { res.redirect('/vasts'); })
+app.get('/', (req, res) => { console.log('/'); res.redirect('/vasts'); })
 app.use('/vasts', vastsRouter);
 
 app.use((error, req, res, next) => {

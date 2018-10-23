@@ -3,6 +3,7 @@ const VastViewXML = require('../Views/VastViewXML');
 
 class VastsCtrl {
 	static getAll (req, res, next) {
+		console.log('getAll')
 		var model = new VastsModel();
 		model.getAll()
 		.then(rows => {
