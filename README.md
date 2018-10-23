@@ -1,4 +1,5 @@
-# Check.ai 2 hours :grinning: test
+# Check.ai test
+Took 2 hours :grinning:
 
 ---
 How to start:
