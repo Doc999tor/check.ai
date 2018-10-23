@@ -5,6 +5,9 @@ if (run_env.error) { throw new Error (run_env.error); }
 
 const express = require('express');
 const app = express();
+app.disable('x-powered-by'); // small security improvement
+app.disable('etag'); // performance improvement - desabled by default
+
 const port = process.env.PORT || '3000';
 
 const logger = require('morgan')('dev'); // :method :url :status :response-time ms - :res[content-length]
@@ -13,8 +16,9 @@ app.use(logger);
 // db connection
 const connection = require('./lib/db.js');
 
-const indexRouter = require('./lib/routes.js');
-app.use('/', indexRouter);
+const vastsRouter = require('./lib/routes/vastsRoutes.js');
+app.get('/', (req, res) => { res.redirect('/vasts'); })
+app.use('/vasts', vastsRouter);
 
 app.use((error, req, res, next) => {
 	console.log(error)
